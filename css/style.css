@@ -1,0 +1,14 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Rubik+Puddles&display=swap');
+
+h1 {
+    font-family: "Rubik Iso", system-ui;
+    color: rgb(169, 119, 216);
+}
+
+h2 {
+    font-family: "Rubik Puddles", system-ui;
+    color: rgb(169, 119, 216);
+}
+  
