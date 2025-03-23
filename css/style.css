@@ -285,10 +285,10 @@ li.name{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
-    box-sizing: border-box;
-    height: 190px;
+    width: 245px;
+    height: 180px;
     transform: translateY(-100px);
+    margin-left: 2px;
 }
 
 .projects .card:hover .face.face2{
