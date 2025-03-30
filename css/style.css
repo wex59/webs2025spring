@@ -1,86 +1,103 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Iso&family=Rubik+Puddles&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Rubik+Iso&family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Rubik+Iso&family=Rubik+Puddles&display=swap');
 
 
 body{
-    background-image: url(../images/pixil-frame-0\ \(6\).png);
+    background-image: url(../images/pink.png);
     background-size: 100vw 40vh;
     background-repeat: no-repeat;
     margin: 0px;
+    position: relative;
+    min-height: 100vh;
+    
+    
+}
+html {
+    scroll-behavior: smooth;
 }
 /***** Main menu styling *****/
 
-.main-nav a {
-    color: DB8ADF;  
+.main-nav{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    background-color: #FFD9EB;
+}
+.main-nav a, .selection li, .face.face1 {
+    color: #DB8ADF;
+    -webkit-text-stroke: 0.7px black;
     font-family: "Jersey 10", sans-serif;
-    font-size: 25px;
+    font-size: 28px;
     font-style: normal; 
     
 }
 
-.main-nav ul {
+.main-nav ul, .selection ul{
     list-style-type: none;
     display: flex;
     justify-content: center; /* centers the navigation items */
     padding: 0;
     margin: 0 auto; /* Center the ul */
-    width: fit-content;
+    
 }
 
-.main-nav li a {
+.main-nav li a, .selection li{
     display: flex;
-    padding: 10px 20px;
-    margin-left: 10px;       
+    padding: 10px 20px;    
     text-decoration: none;
 }
 
 .main-nav .active, .main-nav a:hover, .main-nav a:focus   {
-    text-shadow: 5px 5px 5px #DB8ADF; 
-    color: #ffffff;          
+    color: #ffffff;
+    -webkit-text-stroke: #ffffff;      
+    text-shadow: 5px 5px 5px #DB8ADF;    
+    
 }
 
 .main-content{
     display: flex;
+    position: relative;
     justify-content: center;
     overflow: hidden;
-    
-    /*background-image: url(../images/main-bg1.png);
-    background-size: 100vw 400px;
-    background-position: 30% 35% ;
-    background-repeat: no-repeat; */
 }
 
-.computer {
+.computer{
     margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .computer ul {
     margin-top: -420px;
     margin-left: 262px;
     list-style-type: none;
+    width: 5rem;
 }
 
 .computer ul li a {
     display: flex;
     flex-direction: column;
     font-family: "Jersey 10", sans-serif;
-    color: #DB8ADF;
+    color: black;
 }
 
 .computer ul li img{
-    height: 60px;
-    width: 60px;
+    height: 3.75rem;
+    width: 3.75rem;
 }
 
 .mouse{
     margin-left: 350px;
-    
+    height: 2.75rem;
+    width: 1.75rem;
+    animation:
+        sparkle-move-y 2s steps(3) infinite;
 }
 
 #sparkle-1{
-    background-image: url(../images/sparkle4.png);
+    background-image: url(../images/sparkle7.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
@@ -88,6 +105,97 @@ body{
     height: 250px;
     margin-top: 350px;
     margin-right: 800px;
+    animation:
+        sparkle-move-y 1s steps(2) infinite;
+}
+
+#sparkle-2{
+    background-image: url(../images/sparkle12.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 190px;
+    height: 290px;
+    margin-top: 90px;
+    margin-right: 540px;
+    animation:
+        sparkle-move-y 1s steps(2) infinite;
+}
+
+#sparkle-3{
+    background-image: url(../images/sparkle6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 210px;
+    height: 310px;
+    margin-top: 0px;
+    margin-right: 1000px;
+    animation:
+        sparkle-move-y 1s steps(2) infinite;
+}
+
+#sparkle-4{
+    background-image: url(../images/sparkle10.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 150px;
+    height: 250px;
+    margin-top: 300px;
+    margin-left: 500px;
+    animation:
+        sparkle-move-y 1s steps(2) infinite;
+}
+
+#sparkle-5{
+    background-image: url(../images/sparkle6.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 170px;
+    height: 270px;
+    margin-top: 75px;
+    margin-left: 690px;
+    animation:
+        sparkle-move-y 1s steps(2) infinite;
+}
+
+#sparkle-6{
+    background-image: url(../images/sparkle7.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 210px;
+    height: 310px;
+    margin-top: 200px;
+    margin-left: 1100px;
+    animation:
+        sparkle-move-y 1s steps(2) infinite;
+}
+
+#sparkle-7{
+    background-image: url(../images/sparkle10.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 110px;
+    height: 210px;
+    margin-top: 290px;
+    margin-right: 1250px;
+    animation:
+        sparkle-move-y 1s steps(2) infinite;
+}
+
+#sparkle-8{
+    background-image: url(../images/sparkle12.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 110px;
+    height: 210px;
+    margin-top: -10px;
+    margin-left: 1150px;
     animation:
         sparkle-move-y 1s steps(2) infinite;
 }
@@ -101,48 +209,32 @@ body{
 .welcome h1{
     margin-top: 200px;
     font-family: "Jersey 10", sans-serif;
-    font-size: 50px;
+    font-size: 55px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     color: #DB8ADF;
+    -webkit-text-stroke: 0.1px black;
+   
 }
 
 .self {
-    width: 469px;
-    height: 490px;
+    width: 29.3rem;
+    height: 30.6rem;
+    
 }
 
-.cloud {
-    background-image: url(../images/cloud-front.png);
+.cloud, .cloud2 {
+    background-image: url(../images/c5-front.png);
     background-repeat: repeat;
     background-size: contain;
     position: absolute;
-    margin-top: -265px;
+    margin-top: -130px;
     width: 100%;
-    height: 375px;
+    height: 340px;
     animation: 
         move-x 15s steps(50)  infinite,
         move-y 1s steps(2) infinite ;
     z-index: -1;  /* Send behind other content */
-}
-
-.cloud2 {
-    background-image: url(../images/cloud-front2.png);
-    background-repeat: repeat;
-    background-size: contain;
-    position: absolute;
-    margin-top: 1300px;
-    width: 100%;
-    height: 375px;
-    animation: 
-        move-x2 15s steps(50)  infinite,
-        move-y 1s steps(2) infinite ;
-    z-index: -1;  /* Send behind other content */
-}
-
-@keyframes move-x2 {
-    from { background-position-x:-150vw; }
-    to { background-position-x: 40vw; }
 }
 
 @keyframes move-x {
@@ -156,27 +248,19 @@ body{
 }
 
 
-
-.skills-title h1{
-    padding: 30px;
-    font-family: "Jersey 10", sans-serif;
-    font-size: 50px;
-    color: #DB8ADF;
-    text-align: center;
-
-}
-
 .skills-content{
     display: flex;
+    margin-top: 9rem;
     flex-direction: row;
     justify-content: center;
+    margin-bottom: 13rem;
+    font-family: "Jersey 10", sans-serif;
+    color: black;
+    -webkit-text-stroke: 0.4px #DB8ADF;
     
 }
 .notepad{
-    margin-top: 15px;
-    font-family: "Jersey 10", sans-serif;
-    text-shadow: 4px 4px 4px #DEDEFC; 
-    color: #DB8ADF;
+    margin-right: 4rem;
 }
 .notepad-img{
     align-items: center;
@@ -190,46 +274,83 @@ body{
     font-size: 50px;
     
 }
-li.name{
-    font-family: "Jersey 10", sans-serif;
+#character{
     font-size: 30px; 
+    
 }
 .language{
-
-    margin-left: 100px;
+    font-size: 30px; 
+    margin-left: 90px;
+    margin-top: 90px;
 }
-.chat-img{
-    width: 490px;
+.language p{
+    margin: 1rem 1rem;
+}
+
+.chat{
+    margin-top: 25px;
+    background-image: url(../images/chat2.png);
+    width: 470px;
     height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
 }
-.chat h1{
-    margin-top: 330px;
-    font-family: "Jersey 10", sans-serif;
-    font-size: 50px;
+
+.chat p{
     text-align: center;
-    padding: 10px;
-    color: #DB8ADF;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.56rem;
+    padding: 1.87rem;
+    margin-top: 2.5rem;
+    color: black;
+    -webkit-text-stroke: 0.4px #DB8ADF;
+    
+    
 }
 
-@media screen and (max-width: 600px) {
-    .skills-content{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        overflow: hidden;
-    }
-    .chat{
-        margin-top: 400px;
-    }
+.element{
+    background-image: url(../images/p-bg.png);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 260vh; /* Start below the pink section */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: repeat;
+    animation: 
+        move-x 15s steps(50)  infinite,
+        move-y 1s steps(2) infinite ;
+
 }
 
+.selection{
+    margin-top: 23rem;
+    width: 100%;
+    background-size: 100vw 19vh;
+}
+.selection li{
+    margin: 1rem;
+}
+
+.selection .active, .selection li:hover, .main-nav a:focus   {
+    -webkit-text-stroke: #ffffff;      
+    text-shadow: 5px 5px 5px #DB8ADF;
+    background-color: #FFD9EB;
+    color: #ffffff; 
+    border-radius: 0.5rem;
+}
+
+  
 .container{
-    margin: 90px;
+    background-color: #ffffff;
+    margin: 0rem 10rem;
     display: flex;
-    min-height: 100px;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
+   
 }
 
 .projects{
@@ -240,20 +361,20 @@ li.name{
     flex-wrap: wrap;
 }
 
-.projects .card{
+.projects .project-digital, .projects .project-tech{
     position: relative;
     padding: 20px;
 
 }
 
-.projects .card .face{
+.projects .project-digital .face, .projects .project-tech .face{
     width: 250px;
     height: 300px;
     transition: .4s;
 }
 
-.projects .card .face.face1{
-    background-image: url(../images/projects.png);
+.projects .project-digital .face.face1, .projects .project-tech .face.face1{
+    background-image: url(../images/project3.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100% 100%;
@@ -267,30 +388,148 @@ li.name{
 
 }
 
-.projects .card:hover .face.face1{
+.projects .project-digital:hover .face.face1, .projects .project-tech:hover .face.face1{
     transform: translateY(0);
 }
 
-.projects .card .face.face1 .content{
+.projects .project-digital .face.face1 .content, .projects .project-tech .face.face1 .content{
     margin-top: 220px;
     text-align: center;
     font-family: "Jersey 10", sans-serif;
-    font-size: 30px; 
-    color: #DB8ADF;
+    font-size: 30px;
 }
 
-.projects .card .face.face2 {
+.projects .project-digital .face.face2, .projects .project-tech .face.face2 {
     position: relative;
-    background-color: #DB8ADF;
+    background-color: #FFD9EB;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 245px;
+    width: 240px;
     height: 180px;
     transform: translateY(-100px);
-    margin-left: 2px;
+    margin-left: 3px;
+    text-align: center;
+    border-radius: 0.5rem;
 }
 
-.projects .card:hover .face.face2{
+.projects .project-digital .face.face2 .content, .projects .project-tech .face.face2 .content{
+    padding: 0.5rem;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 17px;
+}
+
+.projects .project-digital .face.face2 .content a, .projects .project-tech .face.face2 .content a{
+    color: black;
+}
+
+.projects .project-digital:hover .face.face2, .projects .project-tech:hover .face.face2{
     transform: translateY(0);
+}
+
+#p5 .face.face1 p{
+    font-size: 24px;
+}
+
+#p14 .face.face1 p, #p15 .face.face1 p{
+    font-size: 25px;
+}
+
+.face.face1{
+    overflow: hidden;
+}
+
+@media screen and (max-width: 1020px) {
+    .skills-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .cloud2{
+        margin-top: -250px;
+        margin-bottom: 0;
+    }
+    .chat{
+        margin-top: 13rem;
+    }
+    .notepad{
+        margin: 0px;
+    }
+    .container{
+        margin: 0 5rem;
+    }
+    .selection{
+        margin-top:15rem;
+    }
+
+}
+@media screen and (max-width: 460px) {
+    .computer .self{
+        width: 20rem;
+        height: 21.3rem;
+    }
+    .computer ul {
+        margin-top: -300px;
+        margin-left: 162px;
+    }  
+    .computer ul li img{
+        height: 2.75rem;
+        width: 2.75rem;
+    }
+    .mouse{
+        margin-left: 250px;
+    }
+    .welcome h1{
+        margin-top: 120px;
+    }
+    .cloud, .cloud2{
+        height: 14rem;
+    }
+    .cloud2{
+
+    }
+    .skills-content{
+        margin-top: 4rem;
+    }
+    .notepad-img{
+        width: 300px;
+        height: 455px;
+    }
+    .notepad ul{
+        margin-top: -380px;
+        margin-left: 100px;
+        font-size: 30px;
+        
+    }
+    #character{
+        font-size: 20px; 
+    }
+    .language{
+        font-size: 20px; 
+        margin-left: 60px;
+        margin-top: 80px;
+    }
+    .language p{
+        margin: 0rem 0rem;
+    }
+
+    .chat{
+        margin-top: 13rem;
+        width: 300px;
+        height: 370px;
+    }
+
+    .chat p{
+        font-size: 1.1rem;
+        padding: 1.6rem;
+        margin-top: 1rem;
+    }
+    .selection{
+        margin-top: 0;
+    }
+    .selection li, .main-nav li a {
+        padding: 5px 10px;  
+    }
 }
