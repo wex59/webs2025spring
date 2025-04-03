@@ -1,0 +1,701 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&family=Rubik+Iso&family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&family=Rubik+Iso&family=Rubik+Puddles&display=swap');
+
+
+body{
+    background-image: url(../images/pink.png);
+    background-size: 100vw 40vh;
+    background-repeat: no-repeat;
+    margin: 0px;
+    position: relative;
+    min-height: 100vh;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+/***** Main nav styling *****/
+
+.main-nav{
+    position: sticky;
+    z-index: 3;
+    top: 0;
+    background-color: #FFD9EB;
+}
+
+/* main navigation and projects selection have same style */
+.main-nav a, .selection li, .face.face1 {
+    color: #DB8ADF;
+    -webkit-text-stroke: 0.7px black;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+}
+.main-nav ul, .selection ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* centers the navigation items */
+    padding: 0;
+    margin: 0 auto; /* center the ul */
+    
+}
+.main-nav li a, .selection li{
+    display: flex;
+    padding: 10px 20px;    
+    text-decoration: none;
+}
+
+/* add hover effects */
+.main-nav .active, .main-nav a:hover, .main-nav a:focus   {
+    color: #ffffff;
+    -webkit-text-stroke: #ffffff;      
+    text-shadow: 5px 5px 5px #DB8ADF;    
+    
+}
+
+/*home section styling*/
+.home{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    overflow: hidden;
+}
+.self {
+    width: 29.3rem;
+    height: 30.6rem;
+    
+}
+.computer{
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*move the link to the desire place and style them*/
+.computer ul {
+    margin-top: -420px;
+    margin-left: 262px;
+    list-style-type: none;
+    width: 5rem;
+
+}
+.computer ul li a {
+    display: flex;
+    flex-direction: column;
+    font-family: "Jersey 10", sans-serif;
+    color: black;
+}
+.computer ul li img{
+    height: 3.75rem;
+    width: 3.75rem;
+}
+.mouse{
+    margin-left: 350px;
+    height: 2.75rem;
+    width: 1.75rem;
+    /*use the sparkle kyframe but slower to indicate diferences*/
+    animation:
+        sparkle-move-y 2s steps(3) infinite;
+}
+
+/*sparkle decoration for the home section*/
+.sparkle{
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    animation:
+        sparkle-move-y 1s steps(2) infinite;
+}
+#sparkle-1{
+    background-image: url(../images/sparkle7.png);
+    width: 150px;
+    height: 250px;
+    margin-top: 350px;
+    margin-right: 800px;
+    animation:
+        sparkle-move-y 1s steps(2) infinite;
+}
+
+#sparkle-2{
+    background-image: url(../images/sparkle12.png);
+    width: 190px;
+    height: 290px;
+    margin-top: 90px;
+    margin-right: 540px;
+}
+
+#sparkle-3{
+    background-image: url(../images/sparkle6.png);
+    width: 210px;
+    height: 310px;
+    margin-top: 0px;
+    margin-right: 1000px;
+}
+
+#sparkle-4{
+    background-image: url(../images/sparkle10.png);
+    width: 150px;
+    height: 250px;
+    margin-top: 300px;
+    margin-left: 500px;
+}
+
+#sparkle-5{
+    background-image: url(../images/sparkle6.png);
+    width: 170px;
+    height: 270px;
+    margin-top: 75px;
+    margin-left: 690px;
+}
+
+#sparkle-6{
+    background-image: url(../images/sparkle7.png);
+    width: 210px;
+    height: 310px;
+    margin-top: 200px;
+    margin-left: 1100px;
+}
+
+#sparkle-7{
+    background-image: url(../images/sparkle10.png);
+    width: 110px;
+    height: 210px;
+    margin-top: 290px;
+    margin-right: 1250px;
+}
+
+#sparkle-8{
+    background-image: url(../images/sparkle12.png);
+    width: 110px;
+    height: 210px;
+    margin-top: -10px;
+    margin-left: 1150px;
+}
+/*keyframe for sparkle*/
+@keyframes sparkle-move-y {
+    from { transform: translateY(0); }
+    to { transform: translateY(-20px); }
+}
+
+/*welcome heading styling*/
+.welcome h1{
+    margin-top: 200px;
+    font-family: "Jersey 10", sans-serif;
+    font-size: 55px;
+    text-align: center;
+    padding: 5px;
+    color: #DB8ADF;
+    -webkit-text-stroke: 0.1px black;
+   
+}
+
+/*cloud decoration styling*/
+.cloud, .cloud2 {
+    background-image: url(../images/c5-front.png);
+    background-repeat: repeat;
+    background-size: contain;
+    position: absolute;
+    margin-top: -130px;
+    width: 100%;
+    height: 340px;
+    animation: 
+        move-x 15s steps(50)  infinite,
+        move-y 1s steps(2) infinite ;
+    z-index: -1;  /* send behind other content */
+}
+/*cloud keyframes*/
+@keyframes move-x {
+    from { background-position-x:-100vw; }
+    to { background-position-x: 0vw; }
+}
+@keyframes move-y {
+    from { background-position-y: 50%; }
+    to { background-position-y: 55%; }
+}
+
+/*about section styling*/
+.about-content{
+    display: flex;
+    margin-top: 9rem;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 13rem;
+    
+}
+
+/*notepad styling*/
+/*put together to have same font styling*/
+.notepad, .contact a, .contact-info{
+    margin-right: 4rem;
+    width: 31rem;
+    font-family: "Jersey 10", sans-serif;
+    color: black;
+    -webkit-text-stroke: 0.4px #DB8ADF;
+}
+.notepad-img{
+    align-items: center;
+    width: 495px;
+    height: 650px;
+}
+.notepad ul{
+    list-style: none;
+    margin-top: -520px;
+    margin-left: 185px;
+    font-size: 50px;
+    
+}
+
+/*specific words have different styling*/
+h2{
+    font-size: 30px; 
+    color: #DB8ADF;
+    -webkit-text-stroke: 0.1px black;
+    text-decoration: underline;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+.language{
+    font-size: 26px; 
+    margin: 4.6rem 5.6rem 0.5rem 5.6rem;
+}
+
+
+
+/*contact button styling*/
+.contact a{
+    margin: 0;
+    text-decoration: none;
+}
+.contact{
+    margin-left: 17rem;
+    width: 9.5rem;
+    font-size: 28px; 
+    text-align: center;
+    background-color: #FAB2D3;
+    border-radius: 0.5rem;
+    animation: pulse 1s linear infinite both;
+}
+/*contact button keyframes*/
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+/*chat styling*/
+.chat{
+    margin-top: 5rem;
+    background-image: url(../images/chat2.png);
+    width: 470px;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+/*put the introduction to the desire place*/
+.chat p{
+    text-align: center;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 1.56rem;
+    padding: 1.87rem;
+    margin-top: 2.5rem;
+    color: black;
+    -webkit-text-stroke: 0.4px #DB8ADF;
+}
+
+/*add a background for the project section*/
+.project-bg{
+    background-image: url(../images/p-bg.png);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    top: 260vh; 
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: repeat;
+    /*use cloud keyframes*/
+    animation: 
+        move-x 15s steps(50)  infinite,
+        move-y 1s steps(2) infinite ;
+
+}
+
+/*project slection filter styling*/
+.selection{
+    margin-top: 23rem;
+    width: 100%;
+    background-size: 100vw 19vh;
+}
+.selection li{
+    margin: 1rem;
+}
+.selection .active, .selection li:hover, .main-nav a:focus   {
+    -webkit-text-stroke: #ffffff;      
+    text-shadow: 5px 5px 5px #DB8ADF;
+    background-color: #FFD9EB;
+    color: #ffffff; 
+    border-radius: 0.5rem;
+}
+
+/*project section styling*/
+.container{
+    background-color: #ffffff;
+    margin: 0rem 10rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+   
+}
+.projects{
+    width: 1900px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projects .project-digital, .projects .project-tech{
+    position: relative;
+    padding: 20px;
+
+}
+.projects .project-digital .face, .projects .project-tech .face{
+    width: 250px;
+    height: 300px;
+    transition: .4s;
+}
+
+/*the project title card styling*/
+.projects .project-digital .face.face1, .projects .project-tech .face.face1{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px); /*to move the title card*/
+    position: relative;
+}
+ /*add corresponding image to projects*/
+#p1{
+    background-image: url(../images/boulderdash.gif);
+}
+#p2{
+    background-image: url(../images/restaurantWeb.png);
+}
+#p3{
+    background-image: url(../images/particleSystem.png);
+}
+#p4{
+    background-image: url(../images/seleniumTesting.png);
+}
+#p5{
+    background-image: url(../images/airplaneRoute.png);
+}
+#p6{
+    background-image: url(../images/boogle-Game.png);
+}
+#p7{
+    background-image: url(../images/word-puzzel.png);
+}
+#p8{
+    background-image: url(../images/bmpEditing.png);
+}
+#p9{
+    background-image: url(../images/unitTesting.png);
+}
+#p10{
+    background-image: url(../images/performanceTesting.png);
+}
+#p11{
+    background-image: url(../images/staticTesting.png);
+}
+#p12{
+    background-image: url(../images/pathFinder.png);
+}
+#p13{
+    background-image: url(../images/fitnessWorldGym.png);
+}
+#p14{
+    background-image: url(../images/audioNarrative.png);
+}
+#p15{
+    background-image: url(../images/VisualArgument.png);
+}
+
+ /*move up when hover*/
+.projects .project-digital:hover .face.face1, .projects .project-tech:hover .face.face1{
+    transform: translateY(0);
+}
+
+ /*the project title styling*/
+.projects .project-digital .face.face1 .content, .projects .project-tech .face.face1 .content{
+    margin-top: 13.75rem;
+    text-align: center;
+    font-size: 30px;
+}
+
+/*the project description card styling*/
+.projects .project-digital .face.face2, .projects .project-tech .face.face2 {
+    position: relative;
+    background-color: #FFD9EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 240px;
+    height: 180px;
+    transform: translateY(-100px); /*move the description card down*/
+    margin-left: 3px;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+/*the project description styling*/
+.projects .project-digital .face.face2 .content, .projects .project-tech .face.face2 .content{
+    padding: 0.5rem;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 19px;
+}
+.projects .project-digital .face.face2 .content p, .projects .project-tech .face.face2 .content p{
+    margin-bottom: 0.3rem;
+    margin: 0.5rem 0.3rem 0.3rem 0.3rem;
+}
+.projects .project-digital .face.face2 .content a, .projects .project-tech .face.face2 .content a{
+    color: black;
+}
+/*move down when hover*/
+.projects .project-digital:hover .face.face2, .projects .project-tech:hover .face.face2{
+    transform: translateY(0);
+}
+
+/* smaller font size for long title*/
+#p5  p, #p14  p, #p15  p{
+    font-size: 25px;
+}
+
+/*footer section styling*/
+footer{
+    background-color: #FFD9EB;
+    margin-top: 5rem;
+    height: 21rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.footer-inside{
+    height: 100%;
+    margin-top: 1.5rem;
+}
+.footer-img{
+    background-image: url(../images/footer.png);
+    background-repeat: no-repeat;
+    width: 37rem;
+    height: 100%;
+}
+/*contact information styling and move to desire place*/
+.contact-info {
+    width: 21rem;
+    margin-top: -17rem;
+    margin-left: 12.5rem;
+    text-align: center;
+}
+.contact-info p {
+    font-size: 24px;
+    margin: 0;
+}
+/*up icon with sparkle keyframes*/
+.up-img{
+    height: 5.6rem;
+    width: 5.6rem;
+    margin-left: 36rem;
+    margin-top: -1rem;
+    animation:
+        sparkle-move-y 1s steps(2) infinite;
+}
+
+/*no animation for user preference*/
+@media screen and (prefers-reduced-motion: reduce) {
+    * {
+      animation: none;
+    }
+}
+
+/*resize elements for a tablet screen */
+@media screen and (max-width: 1020px) {
+    .about-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+    .cloud2{
+        margin-top: -250px;
+        margin-bottom: 0;
+    }
+    .chat{
+        margin-top: 3rem;
+    }
+    .notepad{
+        margin: 0px;
+        height: 40rem;
+    }
+    .container{
+        margin: 0 5rem;
+    }
+    .selection{
+        margin-top:15rem;
+    }
+    .project-bg{
+        top: 340vh; 
+        left: 0;
+        right: 0;
+        bottom: 0;
+        
+    }
+}
+@media screen and (max-width: 670px){
+    .footer-inside{
+        width: 28rem;
+    }
+    .footer-img{
+        background-size: 25rem 100%;
+    }
+    .contact-info {
+        margin-left: 7.5rem;
+        width: 16rem;
+    }
+    .contact-info p {
+        font-size: 19px;
+    }
+    .up-img{
+        height: 4.6rem;
+        width: 4.6rem;
+        margin-left: 24rem;
+       
+    }
+}
+
+/*resize elements for a phone screen */
+@media screen and (max-width: 460px) {
+    .computer .self{
+        width: 20rem;
+        height: 21.3rem;
+    }
+    .computer ul {
+        margin-top: -300px;
+        margin-left: 162px;
+    }  
+    .computer ul li img{
+        height: 2.75rem;
+        width: 2.75rem;
+    }
+    .mouse{
+        margin-left: 250px;
+    }
+    .welcome h1{
+        margin-top: 120px;
+    }
+    .cloud, .cloud2{
+        height: 14rem;
+    }
+
+    .about-content{
+        margin-top: 4rem;
+    }
+    .notepad{
+        max-width: 19rem;
+        height: 30rem;
+    }
+    .notepad-img{
+        width: 300px;
+        height: 455px;
+    }
+    .notepad ul{
+        margin-top: -380px;
+        margin-left: 100px;
+        font-size: 30px;
+        
+    }
+    h2{
+        font-size: 24px; 
+    }
+    .language{
+        margin-top: 3.5rem;
+        font-size: 1.1rem; 
+        margin-left: 4rem;
+        width: 13rem;
+    }
+    
+
+    .chat{
+        margin-top: 1rem;
+        width: 300px;
+        height: 370px;
+    }
+
+    .chat p{
+        font-size: 1.1rem;
+        padding: 1.6rem;
+        margin-top: 1rem;
+    }
+    .selection{
+        margin-top: -2rem;
+    }
+    .selection li, .main-nav li a {
+        padding: 5px 10px;  
+    }
+    .container{
+        margin: 1rem;
+    }
+    .project-bg{
+       
+        top: 260vh; 
+    }
+    .contact{
+        font-size: 20px;
+        margin-left: 9rem;
+        width: 6.4rem;
+    }
+    .footer-inside{
+        width: 17rem;
+    }
+    .footer-img{
+        background-size: 17rem 100%;
+    }
+    .contact-info {
+        margin-left: 5.5rem;
+        width: 10rem;
+        margin-top: -18rem;
+    }
+    .contact-info p {
+
+        font-size: 17px;
+    }
+    .up-img{
+        height: 1.6rem;
+        width: 1.6rem;
+        margin-left: 12rem;
+        margin-top: 2rem;
+    }
+    .up-img img{
+        width: 3rem;
+    }
+}

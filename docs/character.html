@@ -1,0 +1,316 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>Weini's Portfolio</title>
+</head>
+<body>
+    <!--navigation bar with interactivity-->
+    <nav class="main-nav" id="main-nav">
+        <ul>
+          <li ><a class="active" href="#home">Home</a></li>
+          <li><a href="#about-content" >About</a></li>
+          <li><a href="#cloud2">Projects</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <!--home section-->
+        <section class="home" id="home">
+            <div class="sparkle" id="sparkle-1"></div>
+            <div class="sparkle" id="sparkle-2"></div>
+            <div class="sparkle" id="sparkle-3"></div>
+            <div class="computer">
+                <div class="computer-inside">
+                    <img class="self" src="images/computer2.png" alt=" a pixel image of myself(black hair asian girl) inside of a pink computer">
+                    <!--use ul to form two link to proj and about with images-->
+                    <ul>
+                        <li><a href="#about-content"><img src="images/an-personal-info-icon.png" alt="a pixel image of a pink portfolio icon">About Weini</a></li>
+                        <li><a href="#cloud2" class="computer-proj"><img src="images/an-open-folder-icon.png" alt="a pixel image of a pink folder icon">Projects</a></li>
+                    </ul>
+                    <img class="mouse" src="images/mouse2.png" alt="a pixel image of a blue mouse icon with black border">
+                </div>
+                <div class="welcome">
+                    <h1>WELCOME TO WEINI'S WORLD!</h1>
+                </div>
+            </div>
+            <div class="sparkle" id="sparkle-4"></div>
+            <div class="sparkle" id="sparkle-5"></div>
+            <div class="sparkle" id="sparkle-6"></div>
+            <div class="sparkle" id="sparkle-7"></div>
+            <div class="sparkle" id="sparkle-8"></div>
+        </section>
+
+        <div class="cloud"></div>
+
+        <!--about section-->
+        <section class="about-content" id="about-content">
+            <div class="notepad"> 
+                <img class="notepad-img" src="images/notepad1.png" alt="a pixel image of a pink notepad with square stripped background">
+                <ul>
+                    <li><h2>CHARACTER:</h2></li>
+                    <li>Weini Xie He</li>
+                </ul>
+                <section class="language">
+                    <h2>Programming:</h2> Java, Python, C, JavaScript, HTML/CSS
+                    <h2>Tools:</h2> Git, Jupyter, Figma, VisualVM, Selenium, Docker, Gimp, Audacity, NumPy, Postman, Flask
+                </section>
+                <!--add a button to contact section-->
+                <div class="contact"><a href="#footer" type="button" >Contact Weini</a></div>
+            </div>
+            <div class="chat" title="introduction">
+                <p>Hi everyone, my name is Weini, and I’m a junior at the University of Pittsburgh, majoring in Computer Science and minoring in Information Science. In my free time, I enjoy watching movies, listening to music, playing video games, and spending time with friends. A sound that reminds me of home is the voice of my family talking. My digital tool that I use every day is Notability, it’s a note taking app that I use for classes. </p>
+            </div>
+        </section>
+
+        <!--projects section start-->
+        <section class="cloud2" id="cloud2"></section> 
+
+        <!--a project selection to filter different projects-->
+        <section class="selection" id="cloud2" title="filter projects into all, tech or digital projects"> 
+            <ul>
+                <li class="active">All</li>
+                <li>Tech</li>
+                <li>Digital</li>
+              </ul>
+        </section>
+    
+        <div class="project-bg"></div>
+
+        <div class="container">
+            <!--list all the projects-->
+            <div class="projects">
+
+                <div class="project-tech">
+                    <div class="face face1" id="p1" title="picture of the Boulder-Dash project">     
+                        <div class="content">
+                            <p title="project title">Boulder Dash</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">Designed and built a retro-style video game in MIPS assembly language, combining elements from Boulder Dash and Minecraft with unique, original mechanics.</p>
+                            <a href="https://github.com/wWweini/Boulder-Dash" target="_blank" title="link to more information about the project">More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project-tech" >
+                    <div class="face face1" id="p2" title="picture of the Restaurant Order System project">
+                        <div class="content">
+                            <p  title="project title">Restaurant Order System</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">A website to let customer order and the kitchen see the order made using HTML5, CSS3, JavaScript, JSON, AJAJ, Python, Flask and, SQLAlchemy.</p>
+                            <a href="https://github.com/wWweini/Restaurant-Order-System" target="_blank"  title="link to more information about the project">More</a>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="project-tech" >
+                    <div class="face face1" id="p3" title="picture of the Particle System project">
+                        <div class="content">
+                            <p  title="project title">Particle System</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p v> A computational technique used to model the behavior of numerous small entities, or "particles," which follow identical rules.</p>
+                            <a href="https://github.com/wWweini/Particle-System" target="_blank"  title="link to more information about the project">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech" >
+                    <div class="face face1" id="p4" title="picture of the Selenium Testing project">
+                        <div class="content">
+                            <p  title="project title">Selenium Testing</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">In a group of two we wrote a systems-level, automated black-box tests for a web app using the Selenium IDE.</p>
+                            <a href="https://github.com/wWweini/Selenium-Testing" target="_blank"  title="link to more information about the project">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech" >
+                    <div class="face face1" id="p5" title="picture of the Airline Route Management System project">
+                        <div class="content">
+                            <p  title="project title">Airline Route Management System</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">Developed a Java-based backend system for airline route optimization using graph algorithms to handle complex travel queries and network analysis.</p>
+                            <a href="https://github.com/wWweini/Airline-Route-Management-System" target="_blank"  title="link to more information about the project">More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech" >
+                    <div class="face face1" id="p6" title="picture of the Boggle Game Solver project">
+                        <div class="content">
+                            <p  title="project title">Boggle Game Solver</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">Developed a Boggle game solver to identify all valid words (3+ letters) on a 2D letter board, adhering to adjacency rules (horizontal, vertical, diagonal) and tile reuse constraints.</p>
+                            <a href="https://github.com/wWweini/Boggle-game" target="_blank"  title="link to more information about the project"> More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-digital" >
+                    <div class="face face1" id="p15" title="picture of the INTERNET IS NOT A WEAPON; IT'S A TOOL project">
+                        <div class="content">
+                            <p  title="project title">INTERNET IS NOT A WEAPON; IT'S A TOOL.</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">An visual digtal media project about cyber bullying. This project is to serve as a call to action and hope to encourage viewers to reflect on their own digital behavior.</p>
+                            <a href="https://github.com/wex59/visual-argument-2025spring" target="_blank"  title="link to more information about the project"> More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech" >
+                    <div class="face face1" id="p8" title="picture of the BMP-Editing project">
+                        <div class="content">
+                            <p  title="project title">BMP-Editing</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">A small command-line image editing tool to read and write uncompressed BMP image files.</p>
+                            <a href="https://github.com/wWweini/BMP-Editing" target="_blank"  title="link to more information about the project"> More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech" >
+                    <div class="face face1" id="p9" title="picture of the Unit Testing project">
+                        <div class="content">
+                            <p  title="project title">Unit Testing</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">In a group of two, we build a game called CoffeeMakerQuest using Test Driven Development to cover unit testing.</p>
+                            <a href="https://github.com/wWweini/Unit-Testing" target="_blank"  title="link to more information about the project"> More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-digital" >
+                    <div class="face face1" id="p12" title="picture of the Path Finder project">
+                        <div class="content">
+                            <p  title="project title">Path Finder</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">In a group of five people we design a navigation app using Figma</p>
+                            <a href="https://www.figma.com/proto/GmW3woMdlBTo7T3B2XlBAY/INFSCI410-APP?node-id=565-2334&p=f&t=O8tRf83Gl5mSUM2T-0&scaling=scale-down&content-scaling=fixed&page-id=247%3A571&starting-point-node-id=565%3A2334&show-proto-sidebar=1" target="_blank"  title="link to more information about the project"> More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech" >
+                    <div class="face face1" id="p11" title="picture of the Static Testing project">
+                        <div class="content">
+                            <p  title="project title">Static Testing</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">In a group of two we developed a full-fledged GUI program on a bean counter system using static testing techniques.</p>
+                            <a href="https://github.com/wWweini/Static-Testing" target="_blank"  title="link to more information about the project"> More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech" >
+                    <div class="face face1" id="p10" title="picture of the Performance Testing project">
+                        <div class="content">
+                            <p  title="project title">Performance Testing</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">In a group of two, we profiled a Conway's Game of Life simulation, and improve its performance by refactoring several methods using VisualVM.</p>
+                            <a href="https://github.com/wWweini/Performance-Testing" target="_blank"  title="link to more information about the project"> More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-digital" >
+                    <div class="face face1" id="p13" title="picture of the Fitness World Gym project">
+                        <div class="content">
+                            <p  title="project title">Fitness World Gym</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">In a group of four people we design gym website using Figma.</p>
+                            <a href="https://www.figma.com/proto/zW3YzX0cRGgKjaOX1RAnOY/INFSCI1420-Fitness-World-Gym?node-id=226-795&p=f&t=WetxiRvBymNKQesi-0&scaling=scale-down&content-scaling=fixed&page-id=181%3A795&starting-point-node-id=226%3A795" target="_blank"  title="link to more information about the project"> More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-digital" >
+                    <div class="face face1" id="p14" title="picture of the The Morning That Changed Everything project">
+                        <div class="content">
+                            <p  title="project title">The Morning That Changed Everything</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">An audio digtal media project about an ordinary morning that takes a terrifying turn.</p>
+                            <a href="https://github.com/wex59/audio-narrative-2025spring" target="_blank"  title="link to more information about the project"> More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tech" >
+                    <div class="face face1" id="p7" title="picture of the Modified Word Puzzle Solver project">
+                        <div class="content">
+                            <p  title="project title">Modified Word Puzzle Solver</p>
+                        </div>
+                    </div>
+                    <div class="face face2">
+                        <div class="content">
+                            <p  title="project description">Designed and implemented an abstract data type (ADT) to solve a modified 2D word search puzzle with wrap-around grid edges and 8-directional word traversal.</p>
+                            <a href="https://github.com/wWweini/Modified-Word-Puzzle" target="_blank"  title="link to more information about the project"> More</a>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+        <!--footer section with contact info-->
+        <footer id="footer">
+            <div class="footer-inside">
+            <div class="footer-img"></div>
+            <div class="contact-info"  title="contact information">
+                <p>Hi! Feel free to contact me.</p>
+                <p>My email: weinixiehe1@gmail.com</p>
+                <p>My github: https://github.com/wWweini</p>
+                <p><a href="images/Weini_Xie He_resume.pdf">My Resume</a></p>
+            </div>
+            <!--add a up icon to help scroll to home section-->
+            <div class="up-img"><a href="#home"><img src="images/up.png" alt="a white pointing up sign icon with pink and blue border"></a></div>
+            </div>
+        </footer>
+
+    </main>
+   <script src="js/projects.js"></script>
+</body>
+</html>
