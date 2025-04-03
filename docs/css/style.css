@@ -594,7 +594,7 @@ footer{
 }
 
 /*resize elements for a phone screen */
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 460px){
     .computer .self{
         width: 20rem;
         height: 21.3rem;
@@ -698,14 +698,14 @@ footer{
     .up-img img{
         width: 3rem;
     }
-    @media(hover: hover) and (pointer: fine) {
-        /*move up when hover*/
-        .projects .project-digital:hover .face.face1, .projects .project-tech:hover .face.face1{
-            transform: translateY(0);
-        }
-        /*move down when hover*/
-        .projects .project-digital:hover .face.face2, .projects .project-tech:hover .face.face2{
-            transform: translateY(0);
-        }
+
+}
+@media screen and (max-width: 460px) and (pointer: coarse){
+    .projects .project-digital.active .face.face1, .projects .project-tech.active .face.face1{
+        transform: translateY(-100%);
+      }
+      
+    .projects .project-digital.active .face.face2, .projects .project-tech.active .face.face2 {
+        transform: translateY(0);
     }
 }

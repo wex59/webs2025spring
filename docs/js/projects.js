@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.main-nav a');
     const sections = document.querySelectorAll('section'); 
-    // Click handler
+    //click handler
     navLinks.forEach(link => {
         link.addEventListener('click', (e) => {
             navLinks.forEach(l => l.classList.remove('active'));
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Scroll handler
+    //scroll handler
     window.addEventListener('scroll', () => {
         let currentSection = '';
         
@@ -78,3 +78,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.querySelectorAll('.project-digital, .project-tech').forEach(project => {
+    project.addEventListener('click', (e) => {
+      // Prevent flip when clicking links
+      if (!e.target.closest('a')) {
+        project.classList.toggle('active');
+      }
+    });
+  });
