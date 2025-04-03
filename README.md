@@ -1,8 +1,6 @@
-Portfolio web
+# Hi welcome to Weini's portfolio website repository!
 
-For the draft please download the following files and start from the choose.html:</br>
-choose.html </br>
-index.html </br>
-images folder </br>
-css folder </br>
-js folder</br>
+Link to my website: https://wex59.github.io/webs2025spring/ </br>
+
+assets.md</br>
+reflection.md</br>
