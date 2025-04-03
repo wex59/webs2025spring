@@ -701,21 +701,7 @@ footer{
 
 }
 @media screen and (max-width: 460px) and (pointer: coarse){
-    .projects .face1 {
-        transform: translateY(0);
-        z-index: 2;
-    }
-      
-    .projects .face {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        transition: transform 0.5s;
-    }
-    .projects .face2 {
-        transform: translateY(100%);
-        z-index: 1;
-    }
+    
     .projects .project-digital.active .face.face1, .projects .project-tech.active .face.face1{
         transform: translateY(-100%);
       }
