@@ -78,30 +78,3 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const mobileMediaQuery = window.matchMedia('(hover: none) and (pointer: coarse)');
-  
-    if (mobileMediaQuery.matches) {
-      const projects = document.querySelectorAll('.project-digital, .project-tech');
-  
-      projects.forEach(project => {
-        project.addEventListener('click', function(e) {
-          e.stopPropagation(); // Prevent event from bubbling to document
-          const isActive = project.classList.contains('active');
-  
-          // Close all projects first
-          projects.forEach(p => p.classList.remove('active'));
-  
-          // Open clicked project if it wasn't active
-          if (!isActive) {
-            project.classList.add('active');
-          }
-        });
-      });
-  
-      // Close projects when clicking outside
-      document.addEventListener('click', function() {
-        projects.forEach(p => p.classList.remove('active'));
-      });
-    }
-  });

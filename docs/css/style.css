@@ -700,13 +700,4 @@ footer{
     }
 
 }
-@media screen and (max-width: 460px) and (pointer: coarse){
-    
-    .projects .project-digital.active .face.face1, .projects .project-tech.active .face.face1{
-        transform: translateY(0);
-      }
-      
-    .projects .project-digital.active .face.face2, .projects .project-tech.active .face.face2 {
-        transform: translateY(0);
-    }
-}
+
