@@ -698,4 +698,14 @@ footer{
     .up-img img{
         width: 3rem;
     }
+    @media(hover: hover) and (pointer: fine) {
+        /*move up when hover*/
+        .projects .project-digital:hover .face.face1, .projects .project-tech:hover .face.face1{
+            transform: translateY(0);
+        }
+        /*move down when hover*/
+        .projects .project-digital:hover .face.face2, .projects .project-tech:hover .face.face2{
+            transform: translateY(0);
+        }
+    }
 }
