@@ -440,7 +440,7 @@ h2{
 }
 
  /*move up when hover*/
-.projects .project-digital:hover .face.face1, .projects .project-tech:hover .face.face1{
+.projects .project-digital:hover .face.face1, .projects .project-tech:hover .face.face1, .projects .project-digital:active .face.face1, .projects .project-tech:active .face.face1{
     transform: translateY(0);
 }
 
@@ -479,7 +479,7 @@ h2{
     color: black;
 }
 /*move down when hover*/
-.projects .project-digital:hover .face.face2, .projects .project-tech:hover .face.face2{
+.projects .project-digital:hover .face.face2, .projects .project-tech:hover .face.face2, .projects .project-digital:active .face.face2, .projects .project-tech:active .face.face2{
     transform: translateY(0);
 }
 
@@ -528,6 +528,10 @@ footer{
     margin-top: -1rem;
     animation:
         sparkle-move-y 1s steps(2) infinite;
+}
+.main-nav a.active {
+    pointer-events: none; /* Prevent multiple clicks */
+    /* Your active state styles */
 }
 
 /*no animation for user preference*/
@@ -643,7 +647,10 @@ footer{
         margin-left: 4rem;
         width: 13rem;
     }
-    
+    .project-bg{
+       
+        top: 250vh; 
+    }
 
     .chat{
         margin-top: 1rem;
@@ -665,10 +672,7 @@ footer{
     .container{
         margin: 1rem;
     }
-    .project-bg{
-       
-        top: 260vh; 
-    }
+    
     .contact{
         font-size: 20px;
         margin-left: 9rem;
@@ -700,4 +704,10 @@ footer{
     }
 
 }
+@media (pointer: coarse){
+    .project-bg{
+       
+        top: 200vh; 
+    }
 
+}
