@@ -722,4 +722,20 @@ footer{
         transform: translateY(0);
     }
 
+    /*Resize these sparkle for better visual */
+    #sparkle-2{
+        background-image: url(../images/sparkle12.png);
+        width: 120px;
+        height: 220px;
+        margin-top: 90px;
+        margin-right: 310px;
+    }
+    
+    #sparkle-4{
+        background-image: url(../images/sparkle10.png);
+        width: 70px;
+        height: 170px;
+        margin-top: 320px;
+        margin-left: 320px;
+    }
 }
