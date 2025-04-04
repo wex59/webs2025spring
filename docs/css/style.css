@@ -316,24 +316,6 @@ h2{
     -webkit-text-stroke: 0.4px #DB8ADF;
 }
 
-/*add a background for the project section*/
-.project-bg{
-    background-image: url(../images/p-bg.png);
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    top: 260vh; 
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-repeat: repeat;
-    /*use cloud keyframes*/
-    animation: 
-        move-x 15s steps(50)  infinite,
-        move-y 1s steps(2) infinite ;
-
-}
-
 /*project slection filter styling*/
 .selection{
     margin-top: 23rem;
@@ -359,7 +341,29 @@ h2{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-   
+}
+
+.parent{
+    min-height: 100vh;
+    position: relative;
+}
+
+/*add a background for the project section*/
+.project-bg{
+    background-image: url(../images/p-bg.png);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 105%;
+    left: 0;
+    right: 0;
+
+    background-repeat: repeat;
+    /*use cloud keyframes*/
+    animation: 
+        move-x 15s steps(50)  infinite,
+        move-y 1s steps(2) infinite ;
+
 }
 .projects{
     width: 1900px;
@@ -567,13 +571,7 @@ footer{
     .selection{
         margin-top:15rem;
     }
-    .project-bg{
-        top: 340vh; 
-        left: 0;
-        right: 0;
-        bottom: 0;
-        
-    }
+      
 }
 @media screen and (max-width: 670px){
     .footer-inside{
@@ -647,10 +645,6 @@ footer{
         margin-left: 4rem;
         width: 13rem;
     }
-    .project-bg{
-       
-        top: 250vh; 
-    }
 
     .chat{
         margin-top: 1rem;
@@ -703,11 +697,29 @@ footer{
         width: 3rem;
     }
 
-}
-@media (pointer: coarse){
-    .project-bg{
-       
-        top: 200vh; 
+    .projects .project-digital,
+    .projects .project-tech {
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    /* Reset hover states for mobile */
+    .projects .project-digital .face.face1,
+    .projects .project-tech .face.face1,
+    .projects .project-digital .face.face2,
+    .projects .project-tech .face.face2 {
+        transition: transform 0.3s ease;
+    }
+    
+    /* Click-activated states */
+    .projects .project-digital.active .face.face1,
+    .projects .project-tech.active .face.face1 {
+        transform: translateY(0);
+    }
+    
+    .projects .project-digital.active .face.face2,
+    .projects .project-tech.active .face.face2 {
+        transform: translateY(0);
     }
 
 }

@@ -10,8 +10,10 @@
 | sparkle 6,7,10,12  | I drew the pixel sparkles image using PixelArt |
 | up  | I make the up image using PixelArt |
 
-| an-open-folder-icon | Recraft generation<\br> Prompt: a pink open file icon image in pixel |
-| an-personal-info-icon  | Recraft generation<\br> Prompt: a pink personal information icon image in pixel |
+| an-open-folder-icon | Recraft generation
+ Prompt: a pink open file icon image in pixel |
+| an-personal-info-icon  | Recraft generation
+ Prompt: a pink personal information icon image in pixel |
 | striped-background  | Recraft generation<\br> Prompt: a pink square striped image |
 | choose-bg  | Recraft generation<\br> Prompt: a sunset image in pixel<\br> Then I changed the color using GIMP |
 | notepad  | Recraft generation<\br> Prompt: a pink notepad image in pixel<\br> Then I removed the inside background and add the striped-background image using GIMP |

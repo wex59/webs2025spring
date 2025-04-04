@@ -78,4 +78,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+document.querySelectorAll('.project-digital, .project-tech').forEach(project => {
+    project.addEventListener('click', function() {
+        //toggle active class on clicked project
+        this.classList.toggle('active');
+        
+        //close other open projects
+        document.querySelectorAll('.project-digital, .project-tech').forEach(otherProject => {
+            if(otherProject !== this) otherProject.classList.remove('active');
+        });
+    });
+});
+
+//close projects when clicking outside
+document.addEventListener('click', function(e) {
+    if(!e.target.closest('.project-digital, .project-tech')) {
+        document.querySelectorAll('.project-digital, .project-tech').forEach(project => {
+            project.classList.remove('active');
+        });
+    }
+});
 
