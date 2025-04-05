@@ -192,7 +192,7 @@ html {
 
 /*cloud decoration styling*/
 #cloud, #cloud2 {
-    background-image: url(../images/c5-front.png);
+    background-image: url(../images/cloud.png);
     background-repeat: repeat;
     background-size: contain;
     position: absolute;
