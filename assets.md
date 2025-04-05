@@ -1,3 +1,7 @@
+| Asset used  | Solution | Author | Licensed
+| ------------- | ------------- | ------------- | ------------- | 
+|  self2 | I created a porfolio image with the game created by scrimsart.com in [Picrew](https://picrew.me/en/image_maker/606067) | scrimsart| https://support.picrew.me/en/about_picrew_player/promise|
+
 | Asset used  | Solution | 
 | ------------- | ------------- | 
 | pixel project and all projects pictures  | I drew the pixel project image using PixelArt, then use GIMP to have the pictures under the pixel project and then combine them|
@@ -5,7 +9,6 @@
 | chat3 and footer  | I make the chat image using PixelArt, then use GIMP to combine the chat image and the self image for the footer |
 |  mouse2 |  I make the mouse image using PixelArt |
 | nav-bg  |  I make the nav-bg image using PixelArt |
-|  self2 | I created a porfolio image with the game created by scrimsart.com in picrew |
 |  self-removebg | remove the background using GIMP |
 | sparkle 6,7,10,12  | I drew the pixel sparkles image using PixelArt |
 | up  | I make the up image using PixelArt |
