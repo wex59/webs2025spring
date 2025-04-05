@@ -554,8 +554,8 @@ footer{
         align-items: center;
         overflow: hidden;
     }
-    .cloud2{
-        margin-top: -250px;
+    #cloud2{
+        margin-top: -16rem;
         margin-bottom: 0;
     }
     .chat{
@@ -565,9 +565,7 @@ footer{
         margin: 0px;
         height: 40rem;
     }
-    .container{
-        margin: 0 5rem;
-    }
+   
     #selection{
         margin-top:15rem;
     }
@@ -615,7 +613,7 @@ footer{
     .welcome h1{
         margin-top: 120px;
     }
-    .cloud, .cloud2{
+    #cloud, #cloud2{
         height: 14rem;
     }
 

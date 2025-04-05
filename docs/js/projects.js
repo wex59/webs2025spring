@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Get all filter items and projects
+    // Get all nav links
     const filterItems = document.querySelectorAll('.main-nav a');
 
-    // Add click event to each filter item
+    // Add click event 
     filterItems.forEach(item => {
         item.addEventListener('click', () => {
 
@@ -48,33 +48,35 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelectorAll('.main-nav a');
-    const sections = document.querySelectorAll('section'); 
-    //click handler
-    navLinks.forEach(link => {
-        link.addEventListener('click', (e) => {
-            navLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
-        });
-    });
+    const sections = document.querySelectorAll('section, .project-section, .parent');
 
     //scroll handler
     window.addEventListener('scroll', () => {
         let currentSection = '';
-        
+        const scrollPos = window.scrollY + window.innerHeight * 0.15; // Adjust threshold
+
         sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            if (window.scrollY >= (sectionTop - sectionHeight/3)) {
-                currentSection = section.getAttribute('id');
-                currentSection = section.getAttribute('class');
+            const rect = section.getBoundingClientRect();
+            const sectionTop = window.scrollY + rect.top;
+            const sectionBottom = sectionTop + rect.height;
+
+            // Check if scroll position is within section bounds
+            if (scrollPos >= sectionTop && scrollPos <= sectionBottom) {
+                const sectionId = section.id;
+                
+                //handle project sections mapping
+                if (['cloud2', 'selection', 'parent'].includes(sectionId)) {
+                    currentSection = 'project-section';
+                } else if (sectionId) {
+                    currentSection = sectionId;
+                }
             }
         });
 
+        //update active states
         navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href').includes(currentSection)) {
-                link.classList.add('active');
-            }
+            const href = link.getAttribute('href').replace('#', '');
+            link.classList.toggle('active', href === currentSection);
         });
     });
 });
