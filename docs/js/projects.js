@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Get all filter items and projects
-    const filterItems = document.querySelectorAll('.selection ul li');
+    const filterItems = document.querySelectorAll('#selection ul li');
     const projects = document.querySelectorAll('.projects>div'); 
 
     // Add click event to each filter item
@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const sectionHeight = section.clientHeight;
             if (window.scrollY >= (sectionTop - sectionHeight/3)) {
                 currentSection = section.getAttribute('id');
+                currentSection = section.getAttribute('class');
             }
         });
 

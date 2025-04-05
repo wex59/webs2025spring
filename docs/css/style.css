@@ -25,14 +25,14 @@ html {
 }
 
 /* main navigation and projects selection have same style */
-.main-nav a, .selection li, .face.face1 {
+.main-nav a, #selection li, .face.face1 {
     color: #DB8ADF;
     -webkit-text-stroke: 0.7px black;
     font-family: "Jersey 10", sans-serif;
     font-size: 28px;
     font-style: normal;
 }
-.main-nav ul, .selection ul{
+.main-nav ul, #selection ul{
     list-style-type: none;
     display: flex;
     justify-content: center; /* centers the navigation items */
@@ -40,7 +40,7 @@ html {
     margin: 0 auto; /* center the ul */
     
 }
-.main-nav li a, .selection li{
+.main-nav li a, #selection li{
     display: flex;
     padding: 10px 20px;    
     text-decoration: none;
@@ -191,7 +191,7 @@ html {
 }
 
 /*cloud decoration styling*/
-.cloud, .cloud2 {
+#cloud, #cloud2 {
     background-image: url(../images/c5-front.png);
     background-repeat: repeat;
     background-size: contain;
@@ -317,15 +317,15 @@ h2{
 }
 
 /*project slection filter styling*/
-.selection{
+#selection{
     margin-top: 23rem;
     width: 100%;
     background-size: 100vw 19vh;
 }
-.selection li{
+#selection li{
     margin: 1rem;
 }
-.selection .active, .selection li:hover, .main-nav a:focus   {
+#selection .active, #selection li:hover, .main-nav a:focus   {
     -webkit-text-stroke: #ffffff;      
     text-shadow: 5px 5px 5px #DB8ADF;
     background-color: #FFD9EB;
@@ -338,6 +338,7 @@ h2{
     background-color: #ffffff;
     margin: 0rem 10rem;
     display: flex;
+    margin-bottom: 5rem;
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
@@ -495,7 +496,6 @@ h2{
 /*footer section styling*/
 footer{
     background-color: #FFD9EB;
-    margin-top: 5rem;
     height: 21rem;
     position: relative;
     display: flex;
@@ -568,7 +568,7 @@ footer{
     .container{
         margin: 0 5rem;
     }
-    .selection{
+    #selection{
         margin-top:15rem;
     }
       
@@ -657,14 +657,14 @@ footer{
         padding: 1.6rem;
         margin-top: 1rem;
     }
-    .selection{
+    #selection{
         margin-top: -2rem;
     }
-    .selection li, .main-nav li a {
+    #selection li, .main-nav li a {
         padding: 5px 10px;  
     }
     .container{
-        margin: 1rem;
+        margin: 3.5rem;
     }
     
     .contact{
